@@ -1,0 +1,4 @@
+RewriteEngine on 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?mywebsite-babinbabu.rhcloud.com[NC] 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?mywebsite-babinbabu.rhcloud.com.*$ [NC] 
+RewriteRule \.(gif|jpg|pdf|mp3)$ - [F]
